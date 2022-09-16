@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/login.css">
+  <title>SHOPPER</title>
+</head>
+
+<body>
+<div class="container">
+  <div id="text">
+    <h1>
+      SHOPPÈR
+    </h1>
+    <p>Login to your Account</p>
+  </div>
+  <form id="loginInp" onsubmit="return false ">
+    <span>
+    <input required type="email" placeholder="Email">
+    <i class="fa-solid fa-user"></i>
+    </span>
+    <span>
+    <input required type="password" placeholder="Password" maxlength="20" >
+         <i class="fa-solid fa-key"></i>
+         <i class="fa-solid fa-eye"></i>
+         <i class="fa-solid fa-eye-slash"></i>
+    </span>
+
+    <p>Forgot your password? </p>
+    <span class="tt"><i class="fa-solid fa-exclamation"></i>Invalid Username or Password </span>
+    <input   id="sub" type="submit" value="Log in">
+    <p>or log in with</p>
+  </form>
+  
+  <div class="sociallog">
+    <a><i class="fa-brands fa-google"></i> <span>Google</span></a>
+    <a><i class="fa-brands fa-square-facebook"></i><span>Facebook</span></a>
+  </div>
+  <p class="rights">By using Shopper you are agree to our <span>Term of Service</span> and <span>Privacy Policy </span></p>
+</div>
+
+<script src="login.js"></script>
+</body>
+
+</html>

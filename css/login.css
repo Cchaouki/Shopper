@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,400;1,700&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :root {
+    
+ 
+      /*yallow*/--bottonThree:#F1A80B;
+    /*very dark blue*/  --bottonFour:#33414E;
+     
+     /*sidebar 2*/ --firstTextCol:#293744;
+
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white ;
+  opacity:90%; /* Firefox */
+  font-size:16px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:white ;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white ;
+}
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+background-color:#091A2F;
+color:white;
+font-weight: 600;
+  }
+  
+  a {
+    text-decoration: none;
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  #text{
+    display:flex ;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:200px;
+    position:relative;
+    
+   text-align:center ;
+   margin-top:10px;
+  } 
+#text h1{
+font-size:35px;
+
+} 
+
+#text p{
+  font-size:25px;
+  font-weight:bold ;
+  margin-top:25px;
+
+} 
+#loginInp {
+  position:relative ;
+} 
+#loginInp input, #loginInp span input{
+  background-color:var(--bottonFour);
+  border:none;
+  outline:none ;
+  width:100%;
+  border-radius:10px;
+  height:55px;
+  color:white ;
+  font-size:20px;
+  font-weight:bold ;
+  padding:10px 0 10px 30px;
+
+} 
+#loginInp span {
+  position:relative ;
+} 
+#loginInp span input{
+  margin-top:10px;
+} 
+#loginInp span i{
+  font-size:12px;
+  position:absolute ;
+}
+.tt{
+  position:relative;
+  top:10px;
+  left:45px;
+ background-color:white;
+ color:var(--firstTextCol);
+ padding:7px 17px;
+ border-radius:5px;
+ display:none ;
+ width:fit-content ;
+ 
+ 
+}
+.tt i{
+  color:white;
+  background-color:var(--firstTextCol);
+  padding:1px 5px;
+  border-radius:50%;
+  margin-left:-14px;
+  margin-top :2px;
+} 
+.fa-user{
+  top:3px;
+  left: 12px;
+} 
+.fa-key{
+  left:12px;
+  top:2px;
+}
+.fa-eye{
+  right:14px;
+  top:4px;
+  display: none;
+} 
+.fa-eye-slash{
+  right:13px;
+  top:4px;
+  display:none;
+} 
+#loginInp p{
+  position:relative ;
+  left:50%;
+  width:fit-content;
+  font-weight:bold ;
+
+} 
+#loginInp p:last-of-type{
+  transform:translate(-50%);
+} 
+#loginInp p:nth-of-type(1):hover{
+  border-bottom: 0.5px solid white ;
+ 
+} 
+#loginInp input[type="submit"]{
+  font-size:25px;
+  font-weight:bold ;
+  background-color:var(--bottonThree);
+  margin-top:25px;
+} 
+.container .sociallog{
+  display:flex ;
+  justify-content:center ;
+  align-items:center ;
+ column-gap:1px
+} 
+
+.sociallog  a{
+  background-color:var(--bottonFour);
+  font-weight:bold ;
+  display:flex ;
+  justify-content:center ;
+  align-items:center ;
+  
+}
+.sociallog  a:first-of-type{
+  padding:15px 40px;
+  border-top-left-radius:8px;
+  border-bottom-left-radius :8px;
+} 
+.sociallog a:last-of-type {
+  padding:15px 35px;
+   border-top-right-radius:8px;
+   border-bottom-right-radius :8px;
+   
+} 
+.sociallog a i{
+  font-size:20px;
+  margin-right:10px;
+} 
+.container .rights{
+  font-size:14px;
+  text-align:center ;
+}
+.container .rights span{
+  font-weight:bold ;
+  
+} 
+
+@media (min-width:422px) {
+  #loginInp p {
+    left:69%;
+  }
+  #loginInp p:last-of-type {
+    transform: translate(-160%);
+  }
+
+}
